@@ -18,14 +18,16 @@ RULES = {
     "trace_alphabet": "LURDlurd",
     "ignored_trace_characters": " \t\r\n",
     "lower_rounding": "up to checkerboard solution parity",
-    "aggregation": "total certified push gap closed / frozen total push gap",
+    "aggregation": "total verified push gap closed / frozen total push gap",
+    "lower_bound_policy": "strongest independently verified model-proved bound, regardless of proof method",
+    "external_reviews": "trusted operator registry bound to rules, manifest, submission, board and proof hashes",
     "instances": 10,
     "arithmetic": "integer bounds and exact rational score",
 }
 
 
 def limits():
-    from . import abstraction
+    from . import abstraction, lrat, proofs, sat
     return {"max_board_cells": MAX_CELLS, "max_trace_actions": MAX_MOVES,
             "max_json_bytes": 64 * 1024**2, "max_potential_states": MAX_PROOF_STATES,
             "max_claimed_bound": MAX_BOUND, "work": WORK_LIMITS, "process": PROCESS_LIMITS,
@@ -35,7 +37,15 @@ def limits():
                             "max_box_configurations": abstraction.MAX_BOX_PATTERNS,
                             "max_absolute_goal_price": abstraction.MAX_PRICE,
                             "max_four_box_proof_states": abstraction.MAX_PATTERN_PROOF_STATES,
-                            "max_absolute_four_box_potential": abstraction.MAX_PATTERN_POTENTIAL}}
+                            "max_absolute_four_box_potential": abstraction.MAX_PATTERN_POTENTIAL},
+            "sat": {"encoding": sat.ENCODING, "max_floor": sat.MAX_FLOOR,
+                    "max_pushes": sat.MAX_PUSHES, "max_variables": sat.MAX_VARIABLES,
+                    "max_clauses": sat.MAX_CLAUSES, "max_literals": sat.MAX_LITERALS},
+            "lrat": {"max_proof_bytes": lrat.MAX_PROOF_BYTES, "max_steps": lrat.MAX_STEPS,
+                     "max_line_bytes": lrat.MAX_LINE_BYTES, "max_id": lrat.MAX_ID,
+                     "max_variable": lrat.MAX_VARIABLE},
+            "reviews": {"max_proofs_per_instance": proofs.MAX_PROOFS,
+                        "max_artifact_bytes": proofs.MAX_ARTIFACT_BYTES}}
 
 
 def digest_file(path: Path) -> str:

@@ -1,9 +1,12 @@
 """Internal subprocess entry point; never executes submitted code."""
 
 import json
+from hashlib import sha256
+import os
 from pathlib import Path
 import resource
 import sys
+import tempfile
 
 from .budget import Exhausted, PROCESS_LIMITS, work_budget
 from .certificates import verify_lower
@@ -17,6 +20,9 @@ def main():
     resource.setrlimit(resource.RLIMIT_CPU, (cpu, cpu + 1))
     resource.setrlimit(resource.RLIMIT_CORE, (0, 0))
     command, *paths = sys.argv[1:]
+    lower = None
+    if command == "encode-sat" and len(paths) == 3:
+        lower = paths.pop()
     paths = list(map(Path, paths))
     code = 0
     try:
@@ -24,9 +30,32 @@ def main():
             if command == "audit" and len(paths) == 1:
                 result, _, _ = audit(paths[0])
                 code = 0 if result["scoreable"] else 2
-            elif command == "score" and len(paths) == 2:
+            elif command == "score" and len(paths) in (2, 3):
                 result = judge(*paths)
-                result.update(accepted=True, outcome="accepted")
+                code = 2 if result["outcome"] == "pending_review" else 0
+            elif command == "encode-sat" and len(paths) == 2 and lower is not None:
+                from .sat import ENCODING, encode_push_bound
+                if not lower.isdigit() or len(lower) > 10 or int(lower) < 1:
+                    raise Invalid("SAT lower bound must be positive")
+                bound = int(lower)
+                board = Board.parse(read_text(paths[0], 8192))
+                cnf = encode_push_bound(board, bound - 1)
+                digest = sha256()
+                temporary = None
+                try:
+                    with tempfile.NamedTemporaryFile(dir=paths[1].parent, prefix=".sokogap-cnf-", delete=False) as output:
+                        temporary = Path(output.name)
+                        for line in cnf.dimacs():
+                            raw = line.encode("ascii")
+                            output.write(raw)
+                            digest.update(raw)
+                    os.link(temporary, paths[1])  # Atomic installation; never overwrites.
+                finally:
+                    if temporary is not None:
+                        temporary.unlink(missing_ok=True)
+                result = {"encoding": ENCODING, "board_sha256": board.digest, "lower": bound,
+                          "max_pushes": bound - 1, "cnf_sha256": digest.hexdigest(),
+                          "variables": cnf.nvars, "clauses": len(cnf), "outcome": "encoded"}
             elif command in {"verify-lower", "replay"} and len(paths) == 2:
                 board = Board.parse(read_text(paths[0], 8192))
                 if command == "verify-lower":

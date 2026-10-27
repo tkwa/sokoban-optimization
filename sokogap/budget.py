@@ -4,7 +4,9 @@ from contextlib import contextmanager
 from contextvars import ContextVar
 
 
-WORK_LIMITS = {"matching_evaluations": 1_000_000, "push_transitions": 30_000_000}
+WORK_LIMITS = {"matching_evaluations": 1_000_000, "push_transitions": 30_000_000,
+               "cnf_literals": 140_000_000, "lrat_literals": 150_000_000,
+               "artifact_bytes": 2 * 1024**3}
 PROCESS_LIMITS = {"memory_bytes": 2 * 1024**3, "cpu_seconds": 600, "wall_seconds": 900}
 _active = ContextVar("sokogap_work_budget", default=None)
 

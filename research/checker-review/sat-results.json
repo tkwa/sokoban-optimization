@@ -1,0 +1,24 @@
+{
+  "boards": 595,
+  "sat_checks": 402,
+  "unsat_checks": 1301,
+  "zero_stage_checks": 595,
+  "noop_padding_checks": 201,
+  "max_exact_pushes": 8,
+  "max_variables": 3005,
+  "max_clauses": 15648,
+  "layouts": {
+    "two_cells": 4,
+    "three_cell_corridor": 22,
+    "four_cell_corridor": 56,
+    "four_cell_square": 53,
+    "eight_disconnected": 83,
+    "nine_open": 93,
+    "eight_ring": 91,
+    "ten_choke": 94,
+    "twelve_open": 98,
+    "two_box_detour": 1
+  },
+  "dimacs_hash_checks": 103,
+  "elapsed_seconds": 5.27
+}

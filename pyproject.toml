@@ -15,7 +15,7 @@ dependencies = []
 sokogap = "sokogap.__main__:main"
 
 [project.optional-dependencies]
-research = ["numpy", "scipy", "networkx"]
+research = ["numpy", "scipy", "networkx", "python-sat"]
 
 [tool.setuptools]
 packages = ["sokogap"]

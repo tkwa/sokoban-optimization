@@ -9,12 +9,13 @@ from .budget import PROCESS_LIMITS
 from .core import Invalid
 
 
-def run_limited(command: str, paths: list[Path]) -> tuple[dict, int]:
+def run_limited(command: str, paths: list[Path], *, parameters: list[str] | None = None) -> tuple[dict, int]:
     if sys.platform != "linux":
         raise Invalid("the published resource-limited runner requires Linux")
     root = str(Path(__file__).resolve().parents[1])
     bootstrap = "import sys; sys.path.insert(0, sys.argv.pop(1)); from sokogap.worker import main; raise SystemExit(main())"
-    args = [sys.executable, "-I", "-B", "-c", bootstrap, root, command, *[str(p.resolve()) for p in paths]]
+    args = [sys.executable, "-I", "-B", "-c", bootstrap, root, command,
+            *[str(p.resolve()) for p in paths], *(parameters or [])]
     process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     try:
         out, err = process.communicate(timeout=PROCESS_LIMITS["wall_seconds"])

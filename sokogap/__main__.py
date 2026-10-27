@@ -19,6 +19,7 @@ def main():
     score_parser = sub.add_parser("score", help="score a submission against a verified frozen baseline")
     score_parser.add_argument("manifest", type=Path)
     score_parser.add_argument("submission", type=Path)
+    score_parser.add_argument("--reviews", type=Path, help="trusted maintainer review registry; never participant supplied")
     freeze_parser = sub.add_parser("freeze", help="create a new local release after baseline verification")
     freeze_parser.add_argument("draft", type=Path)
     freeze_parser.add_argument("output", type=Path)
@@ -28,6 +29,10 @@ def main():
     lower_parser = sub.add_parser("verify-lower", help="verify a lower-bound certificate")
     lower_parser.add_argument("board", type=Path)
     lower_parser.add_argument("certificate", type=Path)
+    encode_parser = sub.add_parser("encode-sat", help="write the exact CNF for fewer than LOWER pushes")
+    encode_parser.add_argument("board", type=Path)
+    encode_parser.add_argument("lower", type=int)
+    encode_parser.add_argument("output", type=Path)
     prove_parser = sub.add_parser("prove", help="run the reference A* and emit a lower-bound certificate")
     prove_parser.add_argument("board", type=Path)
     prove_parser.add_argument("output", type=Path)
@@ -38,7 +43,13 @@ def main():
         status = 0
         if args.command in {"audit", "score"}:
             paths = [args.manifest] + ([args.submission] if args.command == "score" else [])
+            if args.command == "score" and args.reviews is not None:
+                paths.append(args.reviews)
             result, status = run_limited(args.command, paths)
+        elif args.command == "encode-sat":
+            if args.lower < 1:
+                raise Invalid("SAT lower bound must be positive")
+            result, status = run_limited("encode-sat", [args.board, args.output], parameters=[str(args.lower)])
         elif args.command in {"replay", "verify-lower"}:
             evidence = args.solution if args.command == "replay" else args.certificate
             result, status = run_limited(args.command, [args.board, evidence])

@@ -133,7 +133,7 @@ def audit(path: Path) -> tuple[dict, dict[str, Board], dict[str, Bounds]]:
     return report, boards, bounds
 
 
-def judge(manifest_path: Path, submission_path: Path) -> dict:
+def judge(manifest_path: Path, submission_path: Path, reviews_path: Path | None = None) -> dict:
     report, boards, baseline = audit(manifest_path)
     if not report["scoreable"]:
         raise Invalid("benchmark is not frozen with verified baseline evidence; run audit for details")
@@ -145,19 +145,33 @@ def judge(manifest_path: Path, submission_path: Path) -> dict:
     entries = submission["instances"]
     if not isinstance(entries, dict) or set(entries) - set(baseline):
         raise Invalid("invalid submission instances")
-    results = {}
+    from .proofs import evaluate_lower_proofs, load_reviews
+    from .release import digest_file
+    submission_digest = digest_file(submission_path)
+    decisions, review_digest = load_reviews(reviews_path, report["manifest_sha256"], submission_digest)
+    results, proof_reports, pending = {}, {}, 0
     for name, evidence in entries.items():
-        if not isinstance(evidence, dict) or set(evidence) - {"solution", "lower_certificate"}:
-            raise Invalid(f"{name}: expected solution and/or lower_certificate, no raw bound claims")
+        if not isinstance(evidence, dict) or set(evidence) - {"solution", "lower_certificate", "lower_certificates", "lower_proofs"}:
+            raise Invalid(f"{name}: expected solution or lower-bound proof evidence, no raw bound claims")
         lower = upper = None
         if "solution" in evidence:
             if not isinstance(evidence["solution"], str):
                 raise Invalid("solution must be a LURD string")
             upper = replay(boards[name], evidence["solution"]).pushes
-        if "lower_certificate" in evidence:
-            lower = verify_lower(boards[name], evidence["lower_certificate"])
+        lower, proof_reports[name], waiting = evaluate_lower_proofs(
+            boards[name], name, evidence, submission_path.parent, decisions)
+        pending += waiting
         results[name] = baseline[name].improve(lower, upper)
     result = score(baseline, results)
     result["benchmark_sha256"] = report["manifest_sha256"]
     result["benchmark_id"] = report["benchmark_id"]
+    result.update(submission_sha256=submission_digest, reviews_sha256=review_digest,
+                  lower_proofs=proof_reports, pending_proofs=pending,
+                  accepted=None if pending else True,
+                  outcome="pending_review" if pending else "accepted")
+    if pending:
+        # Verified progress may be shown, but an unreviewed submission has no
+        # final score. It cannot be misread as having scored the raw claim.
+        result["provisional_score_percent"] = result.pop("score_percent")
+        result["provisional_score_percent_exact"] = result.pop("score_percent_exact")
     return result

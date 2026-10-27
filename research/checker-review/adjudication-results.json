@@ -1,0 +1,7 @@
+{
+  "binding_mismatches_rejected": 3,
+  "unmatched_decisions_pending": 4,
+  "malformed_registry_fields_rejected": 5,
+  "aggregation_checks": 4,
+  "elapsed_seconds": 0.006
+}

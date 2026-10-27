@@ -1,0 +1,16 @@
+{
+  "scope": "Formula generation only; no lower-bound claim or UNSAT proof for this board",
+  "command": "python3 -m sokogap encode-sat instances/xsokoban-52.xsb 421 OUTPUT.cnf",
+  "outcome": "encoded",
+  "encoding": "sokogap-push-cnf-v1",
+  "board_sha256": "4d1caeaba26f1f63bc10e203b4b1405c8ee808ce67483a620a63ce02574aa90b",
+  "max_pushes": 420,
+  "cnf_sha256": "343f685603e06f22832e2d453cb17c1eb4cd7270e95e27cabd28b16a007b921c",
+  "variables": 1356995,
+  "clauses": 7799061,
+  "cnf_construction_work": 33858697,
+  "limited_worker_exit_code": 0,
+  "process_memory_allowance_bytes": 2147483648,
+  "process_cpu_allowance_seconds": 600,
+  "process_wall_allowance_seconds": 900
+}

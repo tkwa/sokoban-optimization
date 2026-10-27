@@ -15,6 +15,9 @@ MAX_BOUND = 2_000_000
 
 
 def verify_lower(board: Board, certificate: dict) -> int:
+    if isinstance(certificate, dict) and certificate.get("format") == "sokogap-sat-lrat-v1":
+        from .lrat import verify_sat_lower
+        return verify_sat_lower(board, certificate)
     if isinstance(certificate, dict) and certificate.get("format") in (
             "sokogap-abstraction-v1", "sokogap-abstraction-v2"):
         from .abstraction import verify_abstraction

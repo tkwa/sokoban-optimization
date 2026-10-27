@@ -1,0 +1,8 @@
+{
+  "reference_proofs": 10,
+  "rejected_invalid_proofs": 13,
+  "random_sat_formulas": 5000,
+  "accepted_prefixes_checked": 2492,
+  "random_deletion_prefixes": 1001,
+  "elapsed_seconds": 0.352
+}

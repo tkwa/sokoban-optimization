@@ -32,6 +32,10 @@ Either evidence field and any instance may be omitted. An empty `instances`
 object scores zero. A solution is a string; a certificate is an embedded JSON
 object. Bare numerical bounds and unknown submission fields are rejected.
 The placeholders above illustrate structure and are not a valid submission.
+An instance may also include `lower_certificates`, a list of inline certificates,
+and `lower_proofs`, a list of arbitrary proof artifacts. The strongest valid
+proved lower bound counts, independent of method or proof format. See
+[the proof policy](proof-policy.md) for review submission and trust requirements.
 
 The judge verifies the whole baseline before checking a submission. It combines
 the submitted result with that baseline using maximum lower bounds and minimum
@@ -39,6 +43,12 @@ upper bounds. A submission should include the accumulated best evidence for the
 run being evaluated. The CLI is stateless: separate invocations do not implicitly
 merge submissions. `score_percent_exact` is the authoritative rational
 percentage; floating-point values are provided for display.
+While any proof is pending review, the result has `accepted: null`,
+`outcome: pending_review` and `provisional_score_percent[_exact]` for already
+verified progress. It has no final `score_percent[_exact]` fields. Rejected
+individual lower certificates earn no credit and do not discard other valid
+proofs. Invalid submission structure, illegal solutions and contradictory
+verified bounds reject the submission.
 
 ## Lower-bound certificates
 
@@ -59,11 +69,19 @@ table of signed potentials with checked terminal and successor inequalities.
 Full schemas and the additive proof argument are in
 [research/abstraction/README.md](../research/abstraction/README.md).
 
-The returned lower bound uses the certificate's recomputed value and the matching
-baseline, rounded upward to the solution parity. Understating the numerical
+`sokogap-sat-lrat-v1` proves unsatisfiability of the exact Sokoban push problem
+with at most `lower - 1` pushes. The judge regenerates the deterministic CNF,
+checks its digest, and checks the ASCII LRAT refutation. See [SAT details](sat.md).
+
+The potential and abstraction routes retain a stronger independently computed
+matching baseline. All returned bounds round upward to the solution parity.
+Understating the numerical
 claim does not make the baseline or scored result ignore that stronger value.
-These are the accepted proof formats for this protocol. An argument in another
-proof language requires a separately versioned checker extension to earn credit.
+These formats provide automatic verification. Any other valid lower-bound
+argument is eligible through independent review. A separately supplied trusted
+operator registry records the exact verified bound; the participant's numerical
+claim alone never earns credit. Resource limits constrain the automatic route
+and do not define mathematical proof eligibility.
 
 ## Resource policy
 
@@ -89,6 +107,15 @@ data. Fixed caps apply to an entire invocation, including baseline verification:
 | Claimed lower bound | 2,000,000 |
 | Total explicit four-box states | 100,000 |
 | Absolute four-box potential | 10,000,000 |
+| SAT floor / push budget | 512 cells / 2,048 pushes |
+| SAT variables / clauses / literals | 4,000,000 / 20,000,000 / 120,000,000 |
+| CNF construction work (literals + clauses) | 140,000,000 |
+| ASCII LRAT proof / line | 48 MiB / 4 MiB |
+| LRAT steps / variable ID | 1,000,000 / 4,000,000 |
+| LRAT clause ID | 2,147,483,647 |
+| LRAT parsing and clause-visit work | 150,000,000 |
+| Proofs per instance | 64 |
+| External artifact / total hashing allowance | 256 MiB / 2 GiB |
 
 Duplicate JSON keys, nonfinite numbers, oversized integers, malformed objects
 and invalid file references are rejected. Input files are size-checked while
@@ -97,14 +124,17 @@ being read. Baseline references stay inside the release directory.
 Fixed work caps make the main accounting reproducible. CPU, wall and memory
 limits also protect the host; near those limits, hardware and runtime can affect
 completion. Exhaustion reports `accepted: null` and `outcome: resource_exhausted`.
-It earns no score and does not claim the underlying bound false. A checker
+It earns no score and does not claim the underlying bound false. A certificate
+that hits a deterministic adapter work limit during scoring is marked pending
+review; if the process cannot finish, the whole invocation is resource exhausted.
+A checker
 failure also earns no score and must be investigated separately.
 
 | Exit code | Meaning |
 | --- | --- |
 | 0 | Successful verification; score accepted, or complete frozen audit |
 | 1 | Invalid input or evidence |
-| 2 | Draft audit or missing baseline/release evidence |
+| 2 | Draft audit, missing baseline/release evidence, or pending proof review |
 | 3 | Resource exhausted; no validity decision or score |
 | 4 | Checker failure; no validity decision or score |
 

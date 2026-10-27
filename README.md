@@ -1,6 +1,6 @@
 # Sokoban Optimization
 
-A benchmark of ten difficult Sokoban instances. Each push of certified
+A benchmark of ten difficult Sokoban instances. Each push of verified
 gap closure has equal value across the benchmark. The overall score is 0–100%.
 
 **Provisional gap: 762 pushes.** All ten lower bounds have checked certificates.
@@ -57,6 +57,12 @@ closed_pushes = G0 - sum(U[i] - L[i])
 score_percent = 100 * closed_pushes / G0
 ```
 
+For each board, use the **strongest valid lower bound the model proves**,
+regardless of proof method or format. Built-in certificates are automatic
+verification routes. Other proof artifacts can receive independent review;
+pending proofs have no final score. Multiple valid proofs combine by taking
+their maximum, and an invalid proof adds no credit. See [the proof policy](docs/proof-policy.md).
+
 An upper-bound decrease and a lower-bound increase earn the same credit per
 push. Proving all ten instances optimal earns 100%. Omitted instances retain
 their starting bounds; worse or repeated evidence adds no credit. Contradictory
@@ -81,9 +87,11 @@ means all boxes occupy goals. A trace contains `LURDlurd`; case is ignored.
 Only ASCII spaces, tabs, CR and LF are ignored. Illegal moves, incomplete traces,
 and actions after completion are rejected.
 
-Lower proofs use a finite table of state potentials or additive box-pattern
-abstractions. The checker reconstructs the graphs and checks every required
-inequality. It uses Python's standard library and executes no submitted code.
+Automatic lower-bound checks support finite state potentials, additive
+box-pattern abstractions, and an exact bounded-push SAT encoding with checked
+ASCII LRAT UNSAT proofs. The SAT route rules out every solution below the
+claimed lower bound, without restricting how the solver found its proof.
+The checker uses Python's standard library and executes no submitted code.
 See [the protocol](docs/protocol.md) for formats, limits and outcomes, and
 [the certificate construction](research/abstraction/README.md) for the
 mathematical argument and reproduction commands.
@@ -95,11 +103,13 @@ evidence file. Missing evidence prevents freezing. Resource exhaustion produces
 an unscored result whose validity remains undecided.
 
 Independent review covered legal transitions, exhaustive small-board optima,
-parity, signed abstractions and forged proofs. All 23 unit tests pass. The ten
+parity, signed abstractions, exact SAT encoding, LRAT and forged proofs. The ten
 lower certificates take about 29 seconds and 177 MiB peak RAM on the development
 host. The implementation has a written soundness argument and independent
 exhaustive checks; it has not been verified in a proof assistant.
 See [the review](research/checker-review/REVIEW.md).
+The SAT encoder additionally matched exhaustive search in 1,703 decisions on
+595 small boards; [SAT proof instructions](docs/sat.md) include a checked example.
 
 ## Run locally
 
@@ -110,6 +120,7 @@ python3 -m unittest discover -s tests -v
 python3 -m sokogap audit benchmark.draft.json
 python3 -m sokogap verify-lower instances/xsokoban-50.xsb evidence/lower/xsokoban-50-abstraction.json
 python3 -m sokogap replay instances/xsokoban-50.xsb evidence/solutions/xsokoban-50-audit-best.lurd
+python3 -m sokogap verify-lower examples/two-box-detour.xsb examples/two-box-detour.sat-lrat.json
 ```
 
 The draft audit currently exits with code 2 and reports the ten missing record
@@ -135,6 +146,8 @@ Once every record witness is available, the approved release can be created:
 ```sh
 python3 -m sokogap freeze benchmark.draft.json benchmark.json
 python3 -m sokogap score benchmark.json submission.json
+# Operator only: include completed independent proof reviews, if needed.
+python3 -m sokogap score benchmark.json submission.json --reviews trusted-reviews.json
 ```
 
 Submission examples and return codes are in [docs/protocol.md](docs/protocol.md).
