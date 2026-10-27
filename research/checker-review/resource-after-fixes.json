@@ -1,0 +1,10 @@
+{
+  "board": "xsokoban-22",
+  "boxes": 27,
+  "states": 100,
+  "json_bytes": 16284,
+  "matching_calls": 1,
+  "accepted_lower": 306,
+  "elapsed_seconds": 0.022,
+  "peak_rss_mib": 22.059
+}

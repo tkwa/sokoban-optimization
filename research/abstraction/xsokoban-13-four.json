@@ -1,0 +1,9 @@
+{
+  "id": "xsokoban-13",
+  "certified_lower": 224,
+  "published_lower": 224,
+  "patterns_searched": 100,
+  "total_expansions": 10000,
+  "elapsed_seconds": 4.871604188112542,
+  "potential_states": 3
+}

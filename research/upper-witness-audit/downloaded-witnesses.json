@@ -1,0 +1,292 @@
+[
+  {
+    "number": 50,
+    "board_sha256": "d6f86a2a022aa54b1d83f17e22cfa568ad62545f924361f49ae2f27dec617e55",
+    "pushes": 400,
+    "moves": 1168,
+    "solution_path": "evidence/solutions/xsokoban-50-audit-best.lurd",
+    "solution_sha256": "11df64bcd19d55eb1fdca608a6338a1ba67fe1cf5f7022ac5973e526b9269326",
+    "source": "SourceForge statistics tools cache",
+    "archive": "research/source/solver-tools.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 370,
+    "pushes_above_live_record": 30,
+    "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+    "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+    "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+        "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+      },
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+        "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+      }
+    ]
+  },
+  {
+    "number": 69,
+    "board_sha256": "59be4374352e4b81d02fc1f376e43d2a7d7711868b4384a2db8e9509403bf48a",
+    "pushes": 463,
+    "moves": 1493,
+    "solution_path": "evidence/solutions/xsokoban-69-audit-best.lurd",
+    "solution_sha256": "fbeb950ea12dac3cdc7240c0acf31381cedebe40fab8c5b8dd94224eb0a14736",
+    "source": "SourceForge statistics tools cache",
+    "archive": "research/source/solver-tools.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 433,
+    "pushes_above_live_record": 30,
+    "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+    "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+    "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+        "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+      },
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+        "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+      }
+    ]
+  },
+  {
+    "number": 66,
+    "board_sha256": "9fea75636321b79e19dbdd3a7733984a528a21fe6b618a191df8c385c276169b",
+    "pushes": 399,
+    "moves": 1194,
+    "solution_path": "evidence/solutions/xsokoban-66-audit-best.lurd",
+    "solution_sha256": "0e90e5e25588533df7f8481d3077819eadeb7d4d910cb9c64ec9531c1cfb0dcd",
+    "source": "YASC 1.690 source package",
+    "archive": "research/upper-witness-audit/YASC_1_690_src.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 325,
+    "pushes_above_live_record": 74,
+    "source_url": "https://downloads.sourceforge.net/project/sokobanyasc/sokobanyasc/YASC_1_690_src.zip",
+    "retrieved_at": "2026-10-27T01:23:30.947381+00:00",
+    "archive_sha256": "3b259f286549e1f67d63fb5d68d5f3796e899126d834aa1e7d8897337484d6b0",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Solutions - XSokoban.txt",
+        "sha256": "536aa87a1f2092fb489f1b89023c0b1d3d69fcd2163a24b11c2c71f38ecc3bc2"
+      },
+      {
+        "path": "XSokoban Solutions.txt",
+        "sha256": "fdb86da280e9ca3e29ba34b93cabf0c5d6f9700429a8d091fe735b35b41dc103"
+      }
+    ]
+  },
+  {
+    "number": 52,
+    "board_sha256": "4d1caeaba26f1f63bc10e203b4b1405c8ee808ce67483a620a63ce02574aa90b",
+    "pushes": 465,
+    "moves": 1941,
+    "solution_path": "evidence/solutions/xsokoban-52-audit-best.lurd",
+    "solution_sha256": "6752a941acf631fb4c8ecd339a2a7a2fdf471f9d15dfe76cb47b610c84ddcb0b",
+    "source": "YASC 1.690 source package",
+    "archive": "research/upper-witness-audit/YASC_1_690_src.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 421,
+    "pushes_above_live_record": 44,
+    "source_url": "https://downloads.sourceforge.net/project/sokobanyasc/sokobanyasc/YASC_1_690_src.zip",
+    "retrieved_at": "2026-10-27T01:23:30.947381+00:00",
+    "archive_sha256": "3b259f286549e1f67d63fb5d68d5f3796e899126d834aa1e7d8897337484d6b0",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Solutions - XSokoban.txt",
+        "sha256": "536aa87a1f2092fb489f1b89023c0b1d3d69fcd2163a24b11c2c71f38ecc3bc2"
+      },
+      {
+        "path": "XSokoban Solutions.txt",
+        "sha256": "fdb86da280e9ca3e29ba34b93cabf0c5d6f9700429a8d091fe735b35b41dc103"
+      }
+    ]
+  },
+  {
+    "number": 37,
+    "board_sha256": "6aa346a7ac69d38c1eb721251d04e0e900c0a43ea6f746fe819a5a38712c1409",
+    "pushes": 360,
+    "moves": 879,
+    "solution_path": "evidence/solutions/xsokoban-37-audit-best.lurd",
+    "solution_sha256": "2e1d5173f2f946fd455fb4fc708aeab186d673a0e54e46664441ca229a40704c",
+    "source": "SourceForge statistics tools cache",
+    "archive": "research/source/solver-tools.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 284,
+    "pushes_above_live_record": 76,
+    "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+    "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+    "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+        "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+      },
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+        "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+      }
+    ]
+  },
+  {
+    "number": 74,
+    "board_sha256": "0bdc91008dd99cfcd266202b8cd4ca87da7969c77459641f3abf34634f241ec6",
+    "pushes": 230,
+    "moves": 665,
+    "solution_path": "evidence/solutions/xsokoban-74-audit-best.lurd",
+    "solution_sha256": "2981a8527d0e5885aa4b30cfce0f0bd1a8730be2501bb70a0b5aa65a6e1cfad7",
+    "source": "YASC 1.690 source package",
+    "archive": "research/upper-witness-audit/YASC_1_690_src.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 212,
+    "pushes_above_live_record": 18,
+    "source_url": "https://downloads.sourceforge.net/project/sokobanyasc/sokobanyasc/YASC_1_690_src.zip",
+    "retrieved_at": "2026-10-27T01:23:30.947381+00:00",
+    "archive_sha256": "3b259f286549e1f67d63fb5d68d5f3796e899126d834aa1e7d8897337484d6b0",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Solutions - XSokoban.txt",
+        "sha256": "536aa87a1f2092fb489f1b89023c0b1d3d69fcd2163a24b11c2c71f38ecc3bc2"
+      },
+      {
+        "path": "XSokoban Solutions.txt",
+        "sha256": "fdb86da280e9ca3e29ba34b93cabf0c5d6f9700429a8d091fe735b35b41dc103"
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "board_sha256": "ae1aebb28663a8814065a8ff90205aa5973f2771e876615f841e0c5f45c0436e",
+    "pushes": 256,
+    "moves": 752,
+    "solution_path": "evidence/solutions/xsokoban-13-audit-best.lurd",
+    "solution_sha256": "6d0800a19c92c20832f75e5190950a890dbfbf6b2f67cc71018d732e29aa2905",
+    "source": "SourceForge statistics tools cache",
+    "archive": "research/source/solver-tools.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 238,
+    "pushes_above_live_record": 18,
+    "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+    "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+    "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+        "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+      },
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+        "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "board_sha256": "08c65043e7f604af2ba65a74e3dae9f6716987e8ee1a5499659cd3e746d34807",
+    "pushes": 158,
+    "moves": 526,
+    "solution_path": "evidence/solutions/xsokoban-15-audit-best.lurd",
+    "solution_sha256": "5bb977b66790f9c64c03cbd2393e2ddb1997e183da80fdd04c4aa0f9a06f9052",
+    "source": "SourceForge statistics tools cache",
+    "archive": "research/source/solver-tools.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 122,
+    "pushes_above_live_record": 36,
+    "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+    "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+    "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+        "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+      },
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+        "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "board_sha256": "e1f47afae795332e782de4029011676ddfbc8d79e2f5cf37f023be7f0c078a77",
+    "pushes": 398,
+    "moves": 1598,
+    "solution_path": "evidence/solutions/xsokoban-22-audit-best.lurd",
+    "solution_sha256": "5e3149bf2936bbd5c240b0e09159c98d102c8e7d43b5dad8cbac5f6895e10770",
+    "source": "SourceForge statistics tools cache",
+    "archive": "research/source/solver-tools.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 324,
+    "pushes_above_live_record": 74,
+    "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+    "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+    "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/YASS/2.153/10 Minutes/XSokoban, YASS 2.153, 10 Minutes.sok",
+        "sha256": "769e8d1fcd53ae1f8faf660b59c311a2176b6f7bffcd6154e0c9a903383831b7"
+      },
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/YASS/2.153/10 Seconds/XSokoban, YASS 2.153, 10 Seconds.sok",
+        "sha256": "ec5276f62edff4e847f7dc9b1836d32f496d3a8dc111da4f5dc0e46ae48bb8ad"
+      }
+    ]
+  },
+  {
+    "number": 31,
+    "board_sha256": "88a26d4a3f5dbe352eaeb842e8da89fa993260aec96be7dab86827576acc2a23",
+    "pushes": 264,
+    "moves": 879,
+    "solution_path": "evidence/solutions/xsokoban-31-audit-best.lurd",
+    "solution_sha256": "5b7b2ba03b500532b17aa27a9d4947890af53cfd36f251dbf012335b7fda9f43",
+    "source": "SourceForge statistics tools cache",
+    "archive": "research/source/solver-tools.zip",
+    "replay": "accepted",
+    "matches_live_record": false,
+    "live_record_pushes": 250,
+    "pushes_above_live_record": 14,
+    "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+    "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+    "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+    "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+    "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+    "source_archive_members": [
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+        "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+      },
+      {
+        "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+        "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+      }
+    ]
+  }
+]

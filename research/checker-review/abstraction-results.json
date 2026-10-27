@@ -1,0 +1,8 @@
+{
+  "goal_layouts": 24,
+  "abstract_graphs": 72,
+  "reverse_edge_sets": 2127,
+  "priced_state_distances": 6381,
+  "partition_certificates": 612,
+  "elapsed_seconds": 0.399
+}

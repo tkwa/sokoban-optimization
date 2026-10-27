@@ -1,0 +1,17 @@
+The MIT license covers the original verifier, tooling and documentation in
+this project. It does not relicense the original puzzle layouts, downloaded
+software, research papers, website captures, or third-party solution traces.
+
+The selected XSokoban layouts are credited to Thinking Rabbit in the original
+collection. Layout identity was checked against Andrew Myers's XSokoban 3.3c
+distribution at https://www.cs.cornell.edu/andru/release/xsokoban-3.3c.tar.gz.
+
+Public numerical lower-bound evidence is attributed to Andre G. Pereira,
+Robert Holte, Jonathan Schaeffer, Luciana S. Buriol and Marcus Ritt,
+"Improved Heuristic and Tie-Breaking for Optimally Solving Sokoban", IJCAI 2016,
+https://ijcai.org/proceedings/2016/0100.pdf.
+
+The independently generated abstraction certificates are outputs of this
+project's verifier and baseline construction. Third-party solution provenance
+is recorded under research/upper-witness-audit/. Raw research downloads and
+third-party executables remain local research material, excluded from Git.

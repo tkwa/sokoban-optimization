@@ -1,0 +1,15 @@
+--- src/de/sokoban_online/jsoko/gui/NumberInputTF.java
++++ src/de/sokoban_online/jsoko/gui/NumberInputTF.java
+@@ -201,7 +201,11 @@
+ 		} else {
+ 			rc = value;
+ 		}
+-		textfieldGUI.setValue(rc);
++		if (textfieldGUI.getValue() instanceof Integer) {
++            textfieldGUI.setValue(Integer.valueOf((int) rc));
++        } else {
++            textfieldGUI.setValue(Double.valueOf(rc));
++        }
+ 
+ 		return rc;
+ 	}

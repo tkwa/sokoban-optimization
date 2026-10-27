@@ -1,0 +1,125 @@
+[
+  {
+    "number": 13,
+    "previous_pushes": 256,
+    "pushes": 248,
+    "moves": 698,
+    "live_record_pushes": 238,
+    "matches_live_record": false,
+    "board_sha256": "ae1aebb28663a8814065a8ff90205aa5973f2771e876615f841e0c5f45c0436e",
+    "solution_path": "evidence/solutions/xsokoban-13-jsoko-audit.lurd",
+    "solution_sha256": "87358f63afa29626dd5df32a68d3572651c82b31e8c3f7efdf64baa50d4ff433",
+    "source": "Local JSoko 2.26 push optimization with temporary numeric-type GUI fix",
+    "source_output": "research/upper-witness-audit/jsoko226-patched-13-output.txt",
+    "source_output_sha256": "43d628ad90de2915b8640165103d7eb1d180c69a4851bc1fb582855b7639ff7c",
+    "seed_witness": {
+      "number": 13,
+      "board_sha256": "ae1aebb28663a8814065a8ff90205aa5973f2771e876615f841e0c5f45c0436e",
+      "pushes": 256,
+      "moves": 752,
+      "solution_path": "evidence/solutions/xsokoban-13-audit-best.lurd",
+      "solution_sha256": "6d0800a19c92c20832f75e5190950a890dbfbf6b2f67cc71018d732e29aa2905",
+      "source": "SourceForge statistics tools cache",
+      "archive": "research/source/solver-tools.zip",
+      "replay": "accepted",
+      "matches_live_record": false,
+      "live_record_pushes": 238,
+      "pushes_above_live_record": 18,
+      "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+      "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+      "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+      "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+      "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+      "source_archive_members": [
+        {
+          "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+          "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+        },
+        {
+          "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+          "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+        }
+      ]
+    },
+    "tool_archive": "research/upper-witness-audit/JSoko_2.26.zip",
+    "tool_archive_sha256": "37f7daf5e28f6505491d02dc546b1de6e1c7cd0fc228f26b1ddab81671015209",
+    "local_patch": "research/upper-witness-audit/jsoko-local-spinner-fix.patch",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "obtained_at": "2026-10-27T01:54:58.648965+00:00",
+    "settings": {
+      "optimization_method": "PUSHES_MOVES (1)",
+      "iterative_optimization": true,
+      "maximum_box_configurations_cli": 100,
+      "maximum_box_configurations_effective": 100000,
+      "cpus": 1,
+      "java_heap_mb": 512,
+      "time_limit_minutes": 1,
+      "vicinity_squares": [
+        999
+      ]
+    }
+  },
+  {
+    "number": 31,
+    "previous_pushes": 264,
+    "pushes": 256,
+    "moves": 812,
+    "live_record_pushes": 250,
+    "matches_live_record": false,
+    "board_sha256": "88a26d4a3f5dbe352eaeb842e8da89fa993260aec96be7dab86827576acc2a23",
+    "solution_path": "evidence/solutions/xsokoban-31-jsoko-audit.lurd",
+    "solution_sha256": "363b6cb60d1057219a199e3a83f576e7a50b0d5d6e696ac21040b31e867772dd",
+    "source": "Local JSoko 2.26 push optimization with temporary numeric-type GUI fix",
+    "source_output": "research/upper-witness-audit/jsoko226-patched-31-two-box-output.txt",
+    "source_output_sha256": "325a740cdd71b80aa86d8dde0a309981376b6fb8f265aba07f7743dd5670c6ed",
+    "seed_witness": {
+      "number": 31,
+      "board_sha256": "88a26d4a3f5dbe352eaeb842e8da89fa993260aec96be7dab86827576acc2a23",
+      "pushes": 264,
+      "moves": 879,
+      "solution_path": "evidence/solutions/xsokoban-31-audit-best.lurd",
+      "solution_sha256": "5b7b2ba03b500532b17aa27a9d4947890af53cfd36f251dbf012335b7fda9f43",
+      "source": "SourceForge statistics tools cache",
+      "archive": "research/source/solver-tools.zip",
+      "replay": "accepted",
+      "matches_live_record": false,
+      "live_record_pushes": 250,
+      "pushes_above_live_record": 14,
+      "source_url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+      "retrieved_at": "2026-10-27T00:43:02.826364+00:00",
+      "archive_sha256": "d8fdd3c94959c72d34d8465e018059516d447d284ce9b69dea009ff94f7766a6",
+      "solution_format": "ASCII LURD with final LF; case is ignored by judge",
+      "reuse_status": "Source provenance retained; no separate redistribution permission inferred from archive availability.",
+      "source_archive_members": [
+        {
+          "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Minutes/XSokoban, Takaken 7.4, 10 Minutes.sok",
+          "sha256": "322f10d3e75a019acc5171676246ed4535077f53b9fd55552f301f92c09dfcec"
+        },
+        {
+          "path": "Sokoban Solver Statistics/Solver Results/XSokoban/Takaken/7.4/10 Seconds/XSokoban, Takaken 7.4, 10 Seconds.sok",
+          "sha256": "dbcc851af74bf0a5f890bbd980c31a44f0e52dd770c268abbf979b157386c60e"
+        }
+      ]
+    },
+    "tool_archive": "research/upper-witness-audit/JSoko_2.26.zip",
+    "tool_archive_sha256": "37f7daf5e28f6505491d02dc546b1de6e1c7cd0fc228f26b1ddab81671015209",
+    "local_patch": "research/upper-witness-audit/jsoko-local-spinner-fix.patch",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "obtained_at": "2026-10-27T01:54:58.658357+00:00",
+    "settings": {
+      "optimization_method": "PUSHES_MOVES (1)",
+      "iterative_optimization": true,
+      "maximum_box_configurations_cli": 100,
+      "maximum_box_configurations_effective": 100000,
+      "cpus": 1,
+      "java_heap_mb": 512,
+      "time_limit_minutes": 1,
+      "vicinity_squares": [
+        10,
+        10
+      ]
+    }
+  }
+]

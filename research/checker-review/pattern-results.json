@@ -1,0 +1,10 @@
+{
+  "boards": 7,
+  "priced_heuristic_checks": 6963,
+  "sparse_pattern_checks": 21,
+  "full_certificate_checks": 21,
+  "forgeries_rejected": 105,
+  "largest_sparse_proof": 845,
+  "initial_understatement_cases": 0,
+  "elapsed_seconds": 5.175
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sokoban-optimization"
+version = "0.1.0.dev0"
+description = "A Sokoban push-optimality benchmark with independently checked evidence"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT for original software; puzzle and source provenance in NOTICE"}
+dependencies = []
+
+[project.scripts]
+sokogap = "sokogap.__main__:main"
+
+[project.optional-dependencies]
+research = ["numpy", "scipy", "networkx"]
+
+[tool.setuptools]
+packages = ["sokogap"]

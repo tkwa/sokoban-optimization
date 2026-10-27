@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-10-26",
+  "method": "Read the visible Site Push Record on each public Let's Logic level page in the browser.",
+  "evidence_scope": "Current public record counts. These observations do not include the replay sequences.",
+  "records": [
+    {"number":50,"moves":971,"pushes":370,"url":"https://www.letslogic.com/level/58203"},
+    {"number":69,"moves":1277,"pushes":433,"url":"https://www.letslogic.com/level/946"},
+    {"number":66,"moves":1013,"pushes":325,"url":"https://www.letslogic.com/level/943"},
+    {"number":52,"moves":1563,"pushes":421,"url":"https://www.letslogic.com/level/929"},
+    {"number":37,"moves":744,"pushes":284,"url":"https://www.letslogic.com/level/58175"},
+    {"number":74,"moves":614,"pushes":212,"url":"https://www.letslogic.com/level/951"},
+    {"number":13,"moves":708,"pushes":238,"url":"https://www.letslogic.com/level/890"},
+    {"number":15,"moves":475,"pushes":122,"url":"https://www.letslogic.com/level/892"},
+    {"number":22,"moves":874,"pushes":324,"url":"https://www.letslogic.com/level/899"},
+    {"number":31,"moves":775,"pushes":250,"url":"https://www.letslogic.com/level/908"}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "single_box_assignment": 220.0,
+  "raw_additive_bound": 220.0,
+  "search": [
+    {
+      "restart": 0,
+      "iteration": 0,
+      "bound": 220.0,
+      "lp_bound": 220.0
+    },
+    {
+      "restart": 1,
+      "iteration": 0,
+      "bound": 220.0,
+      "lp_bound": 219.9999999999997
+    },
+    {
+      "restart": 1,
+      "iteration": 1,
+      "bound": 220.0,
+      "lp_bound": 220.0
+    },
+    {
+      "restart": 2,
+      "iteration": 0,
+      "bound": 220.0,
+      "lp_bound": 219.9999999999997
+    },
+    {
+      "restart": 2,
+      "iteration": 1,
+      "bound": 220.0,
+      "lp_bound": 220.0
+    }
+  ],
+  "abstract_states": 96218,
+  "abstract_edges": 476400,
+  "id": "xsokoban-13",
+  "board_sha256": "ae1aebb28663a8814065a8ff90205aa5973f2771e876615f841e0c5f45c0436e",
+  "published_lower": 224,
+  "certified_lower": 220,
+  "elapsed_seconds": 6.099362718174234
+}

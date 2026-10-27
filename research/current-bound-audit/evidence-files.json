@@ -1,0 +1,185 @@
+{
+  "purpose": "Integrity inventory of local research captures; raw captures are not automatically intended for republication.",
+  "files": [
+    {
+      "path": "2016-author.html",
+      "bytes": 17448,
+      "sha256": "3d46bd7c0ad9b82f928f7dbb2d4efdb65d945cc6b62be44a8f5d38013fb9b147"
+    },
+    {
+      "path": "2016-author.html.meta.json",
+      "bytes": 260,
+      "sha256": "1e41ef92edc00e21e95c9568bbd00dcbcab064a246606c74d1df81a34f590933"
+    },
+    {
+      "path": "2016-author.txt",
+      "bytes": 8327,
+      "sha256": "5113085f11ca46ead683bd87742109b9d0d1f93e685d7d4d4ebd22cb5cd8af88"
+    },
+    {
+      "path": "2016-thesis-full.html",
+      "bytes": 11312,
+      "sha256": "58b59313cd4288151b27495609e023dd45885f8dd407dd4f820f6a9419bdb87b"
+    },
+    {
+      "path": "2016-thesis-full.html.meta.json",
+      "bytes": 320,
+      "sha256": "ddf7704bf076e3b8bc15c4f941279ab401a780efeba6deec20c5d9f17df9fcbe"
+    },
+    {
+      "path": "2018-thesis.pdf",
+      "bytes": 282011,
+      "sha256": "9c4afa03abe722d4d08f4c3bac0ea30c0960cc4ca80441d95440494bc94d1a44"
+    },
+    {
+      "path": "2018-thesis.pdf.meta.json",
+      "bytes": 319,
+      "sha256": "44c877fdbb041d2523c96f5d3a133c5def55052a13f0cea458ff8beaafe9592d"
+    },
+    {
+      "path": "2018-thesis.txt",
+      "bytes": 75429,
+      "sha256": "1a4e1d41cd16a79e0e8801bde130878f88874b01264bfba746c4069754486429"
+    },
+    {
+      "path": "andregrahl-repos.json",
+      "bytes": 15690,
+      "sha256": "34d815d47d0d2f62a195c292c82a43d06a94fc2a5af30097cc725354394c7682"
+    },
+    {
+      "path": "andregrahl-repos.json.meta.json",
+      "bytes": 304,
+      "sha256": "99bb0a0f799d1a02354b7bdce26741f0fab85ea81b4975eafdb5f73def1c8633"
+    },
+    {
+      "path": "joriswit-solvers.html",
+      "bytes": 7787,
+      "sha256": "ef25987acb8ac72ed653053d77673a531b954ac027324b1c2b69eb38a32a66c0"
+    },
+    {
+      "path": "joriswit-solvers.html.meta.json",
+      "bytes": 279,
+      "sha256": "bfc7a324578bc6dede60de38f70f64b533084568edebebfbd6710559e5a7fa18"
+    },
+    {
+      "path": "jsoko-candidate-rows.json",
+      "bytes": 4131,
+      "sha256": "a07231d53127ae3d83f64327ecaa43df1671b84379591227bea9f18304419500"
+    },
+    {
+      "path": "jsoko-optimal.html",
+      "bytes": 169764,
+      "sha256": "320cde7323be1552287ebb89dc54b18c483f26e0b589590dc3ca2c3544654e42"
+    },
+    {
+      "path": "jsoko-optimal.html.meta.json",
+      "bytes": 403,
+      "sha256": "8fcffe5e41f00de541b31fb1811cb8b23cb72480e29e2fc064c97fe1d0b120f8"
+    },
+    {
+      "path": "jsoko-optimal.txt",
+      "bytes": 5107,
+      "sha256": "6025686bd639ae16811761799c24a2bf882c547aa773dd2595fb5663fc99ed63"
+    },
+    {
+      "path": "pareira-optimal.html",
+      "bytes": 15905,
+      "sha256": "a49f0906b5faae52d1b3594c0db528eb022df0e22243bad4083f66f8488afb95"
+    },
+    {
+      "path": "pareira-optimal.html.meta.json",
+      "bytes": 390,
+      "sha256": "2585652a7e775467ba5bfcc1f18ccee750d5e195acf5f18a9b62f062410daf5a"
+    },
+    {
+      "path": "pareira-optimal.txt",
+      "bytes": 670,
+      "sha256": "48c3d36df4118ade2759d15239e40cf9bf063381dbc7a8f30b6ccee7056155d3"
+    },
+    {
+      "path": "sokobano-comparison.html",
+      "bytes": 41940,
+      "sha256": "d4dc88f106a79a9c9c2359a203e5260862b58b30ad69284c72a5eece07fc5988"
+    },
+    {
+      "path": "sokobano-comparison.html.meta.json",
+      "bytes": 302,
+      "sha256": "d2dd4f524b4ea72baafa82e0475e4390e8cf822e6e2eb454911d12807ee7a070"
+    },
+    {
+      "path": "sokobano-comparison.txt",
+      "bytes": 8776,
+      "sha256": "ded2e6b1f4468fab2b3afb54e4d3aa07e638f3b81ba8f2bf1529e3fb309de878"
+    },
+    {
+      "path": "sokobano-main.html",
+      "bytes": 17899,
+      "sha256": "1f4e0b60b5ae2fc302c36f24b267c04041334652846b058b5bca12baa7f81a37"
+    },
+    {
+      "path": "sokobano-main.html.meta.json",
+      "bytes": 286,
+      "sha256": "4418ec215e979db58aa0b1cb7299dea9d99b736c36d4175183b31b9127611bf2"
+    },
+    {
+      "path": "sokobano-rollingstone.html",
+      "bytes": 22479,
+      "sha256": "3f95ff9ec50852ed4a7f7a2cf43b1eb39f66c588f58054d569ed9589b75e29af"
+    },
+    {
+      "path": "sokobano-rollingstone.html.meta.json",
+      "bytes": 308,
+      "sha256": "7b4fdb6a7a9abef8cf9d2b46bee5a8bc43cbfd5c28234936e3aa04c8ac1557fa"
+    },
+    {
+      "path": "sokobano-sokolution.html",
+      "bytes": 40059,
+      "sha256": "30d41a4c8b8494d1deee60dd79179065e5c683d63ba2234f6ff21d9f910d421b"
+    },
+    {
+      "path": "sokobano-sokolution.html.meta.json",
+      "bytes": 422,
+      "sha256": "b0843c12b5abe87d345a073181f85e46af9a457826dc9cc4484407f31f0aeb91"
+    },
+    {
+      "path": "sokobano-sokolution.txt",
+      "bytes": 17421,
+      "sha256": "dd0fc174a6fd44a66054dc96ef9987a065ccb32fa6183a5fd05f02bbcb506139"
+    },
+    {
+      "path": "sokobano-solvers.html",
+      "bytes": 82457,
+      "sha256": "41c466c19580fa6e78ce3c4efd5dcc216d7f15111200fe8a4f5a910aa2de7dbf"
+    },
+    {
+      "path": "sokobano-solvers.html.meta.json",
+      "bytes": 280,
+      "sha256": "dceb428baed9fb795e1cd66ae316778fd872b2dee4b8b8e05a80f1dfbc8fde1f"
+    },
+    {
+      "path": "sokolution-candidate-rows.json",
+      "bytes": 4131,
+      "sha256": "a07231d53127ae3d83f64327ecaa43df1671b84379591227bea9f18304419500"
+    },
+    {
+      "path": "sokolution-download-challenge.html",
+      "bytes": 887,
+      "sha256": "e57e675bbc288b9ff1eaa4ec191709a4911d4c0eb28c07a707a3d2e666bd6588"
+    },
+    {
+      "path": "sokolution-download-challenge.html.meta.json",
+      "bytes": 324,
+      "sha256": "f43a94ec73c1dbd2334f24c7b85a1eb8059ecf11cd2ed63d1bfd8e411496aa8c"
+    },
+    {
+      "path": "sokolution-home.html",
+      "bytes": 856,
+      "sha256": "f2c850d030c9f40dee0ef348ead35b6e798b11a23a37840777d50ec18b1d528f"
+    },
+    {
+      "path": "sokolution-home.html.meta.json",
+      "bytes": 262,
+      "sha256": "d82240d72e3121301420045d0027798488acefca07176a1a90be555f7d9bb909"
+    }
+  ]
+}

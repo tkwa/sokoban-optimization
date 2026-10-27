@@ -1,0 +1,2 @@
+# Preserve the original whitespace in third-party patch context.
+*.patch -whitespace

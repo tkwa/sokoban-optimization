@@ -1,0 +1,128 @@
+{
+  "benchmark_id": "xsokoban-gap10-draft-2026-10-26",
+  "status": "draft",
+  "manifest_sha256": "0eefd3c45e8f071a5d1a8a5165e7abb1e39a50747a631b5c8a3f20ca7e464d89",
+  "evidence_ready": false,
+  "release_ready": false,
+  "release_problems": [
+    "release lock missing; pin rules, limits, verifier and baseline evidence before freezing"
+  ],
+  "scoreable": false,
+  "declared_total_gap": 762,
+  "instances": [
+    {
+      "id": "xsokoban-50",
+      "declared_lower": 104,
+      "declared_upper": 370,
+      "push_parity": 0,
+      "verified_lower": 104,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-69",
+      "declared_lower": 223,
+      "declared_upper": 433,
+      "push_parity": 1,
+      "verified_lower": 223,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-66",
+      "declared_lower": 193,
+      "declared_upper": 325,
+      "push_parity": 1,
+      "verified_lower": 193,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-52",
+      "declared_lower": 379,
+      "declared_upper": 421,
+      "push_parity": 1,
+      "verified_lower": 379,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-37",
+      "declared_lower": 246,
+      "declared_upper": 284,
+      "push_parity": 0,
+      "verified_lower": 246,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-74",
+      "declared_lower": 194,
+      "declared_upper": 212,
+      "push_parity": 0,
+      "verified_lower": 194,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-13",
+      "declared_lower": 224,
+      "declared_upper": 238,
+      "push_parity": 0,
+      "verified_lower": 224,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-15",
+      "declared_lower": 108,
+      "declared_upper": 122,
+      "push_parity": 0,
+      "verified_lower": 108,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-22",
+      "declared_lower": 310,
+      "declared_upper": 324,
+      "push_parity": 0,
+      "verified_lower": 310,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    },
+    {
+      "id": "xsokoban-31",
+      "declared_lower": 236,
+      "declared_upper": 250,
+      "push_parity": 0,
+      "verified_lower": 236,
+      "replayed_upper": null,
+      "problems": [
+        "upper-bound witness missing"
+      ]
+    }
+  ],
+  "verification_work": {
+    "matching_evaluations": 10,
+    "push_transitions": 7693845
+  }
+}

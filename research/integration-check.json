@@ -1,0 +1,40 @@
+{
+  "purpose": "Local ten-board release-path validation using alternative solutions; not an official benchmark release",
+  "created_utc": "2026-10-27T01:52:09.816284+00:00",
+  "official_draft_sha256": "0eefd3c45e8f071a5d1a8a5165e7abb1e39a50747a631b5c8a3f20ca7e464d89",
+  "official_draft_gap": 762,
+  "checks": {
+    "freeze_and_limited_audit": {
+      "passed": true,
+      "seconds": 87.347,
+      "verification_work": {
+        "matching_evaluations": 10,
+        "push_transitions": 7693845
+      },
+      "lower_total": 2217,
+      "upper_total": 3393,
+      "gap": 1176
+    },
+    "empty_submission": {
+      "passed": true,
+      "seconds": 29.591,
+      "verification_work": {
+        "matching_evaluations": 10,
+        "push_transitions": 7693845
+      },
+      "score_percent_exact": "0/1"
+    },
+    "all_baseline_evidence_resubmitted": {
+      "passed": true,
+      "seconds": 58.997,
+      "verification_work": {
+        "matching_evaluations": 10,
+        "push_transitions": 15387690
+      },
+      "score_percent_exact": "0/1"
+    }
+  },
+  "passed": true,
+  "official_draft_unchanged": true,
+  "total_seconds": 175.945
+}

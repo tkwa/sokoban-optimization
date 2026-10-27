@@ -1,0 +1,112 @@
+[
+  {
+    "number": 50,
+    "moves": 1168,
+    "pushes": 400,
+    "board_sha256": "d6f86a2a022aa54b1d83f17e22cfa568ad62545f924361f49ae2f27dec617e55",
+    "solution_sha256": "11df64bcd19d55eb1fdca608a6338a1ba67fe1cf5f7022ac5973e526b9269326",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 370,
+    "matches_live_record": false
+  },
+  {
+    "number": 69,
+    "moves": 1493,
+    "pushes": 463,
+    "board_sha256": "59be4374352e4b81d02fc1f376e43d2a7d7711868b4384a2db8e9509403bf48a",
+    "solution_sha256": "fbeb950ea12dac3cdc7240c0acf31381cedebe40fab8c5b8dd94224eb0a14736",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 433,
+    "matches_live_record": false
+  },
+  {
+    "number": 66,
+    "moves": 1194,
+    "pushes": 399,
+    "board_sha256": "9fea75636321b79e19dbdd3a7733984a528a21fe6b618a191df8c385c276169b",
+    "solution_sha256": "0e90e5e25588533df7f8481d3077819eadeb7d4d910cb9c64ec9531c1cfb0dcd",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 325,
+    "matches_live_record": false
+  },
+  {
+    "number": 52,
+    "moves": 1941,
+    "pushes": 465,
+    "board_sha256": "4d1caeaba26f1f63bc10e203b4b1405c8ee808ce67483a620a63ce02574aa90b",
+    "solution_sha256": "6752a941acf631fb4c8ecd339a2a7a2fdf471f9d15dfe76cb47b610c84ddcb0b",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 421,
+    "matches_live_record": false
+  },
+  {
+    "number": 37,
+    "moves": 879,
+    "pushes": 360,
+    "board_sha256": "6aa346a7ac69d38c1eb721251d04e0e900c0a43ea6f746fe819a5a38712c1409",
+    "solution_sha256": "2e1d5173f2f946fd455fb4fc708aeab186d673a0e54e46664441ca229a40704c",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 284,
+    "matches_live_record": false
+  },
+  {
+    "number": 74,
+    "moves": 665,
+    "pushes": 230,
+    "board_sha256": "0bdc91008dd99cfcd266202b8cd4ca87da7969c77459641f3abf34634f241ec6",
+    "solution_sha256": "2981a8527d0e5885aa4b30cfce0f0bd1a8730be2501bb70a0b5aa65a6e1cfad7",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 212,
+    "matches_live_record": false
+  },
+  {
+    "number": 13,
+    "moves": 698,
+    "pushes": 248,
+    "board_sha256": "ae1aebb28663a8814065a8ff90205aa5973f2771e876615f841e0c5f45c0436e",
+    "solution_sha256": "87358f63afa29626dd5df32a68d3572651c82b31e8c3f7efdf64baa50d4ff433",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 238,
+    "matches_live_record": false
+  },
+  {
+    "number": 15,
+    "moves": 526,
+    "pushes": 158,
+    "board_sha256": "08c65043e7f604af2ba65a74e3dae9f6716987e8ee1a5499659cd3e746d34807",
+    "solution_sha256": "5bb977b66790f9c64c03cbd2393e2ddb1997e183da80fdd04c4aa0f9a06f9052",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 122,
+    "matches_live_record": false
+  },
+  {
+    "number": 22,
+    "moves": 1598,
+    "pushes": 398,
+    "board_sha256": "e1f47afae795332e782de4029011676ddfbc8d79e2f5cf37f023be7f0c078a77",
+    "solution_sha256": "5e3149bf2936bbd5c240b0e09159c98d102c8e7d43b5dad8cbac5f6895e10770",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 324,
+    "matches_live_record": false
+  },
+  {
+    "number": 31,
+    "moves": 812,
+    "pushes": 256,
+    "board_sha256": "88a26d4a3f5dbe352eaeb842e8da89fa993260aec96be7dab86827576acc2a23",
+    "solution_sha256": "363b6cb60d1057219a199e3a83f576e7a50b0d5d6e696ac21040b31e867772dd",
+    "independent_coordinate_replay": "accepted",
+    "benchmark_kernel_replay": "accepted",
+    "live_record_pushes": 250,
+    "matches_live_record": false
+  }
+]

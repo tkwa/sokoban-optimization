@@ -1,0 +1,144 @@
+{
+  "audit": "XSokoban current-record upper-bound witness audit",
+  "created_at": "2026-10-27T01:41:23.017995+00:00",
+  "scope": "Obtain replayable current record solutions for the ten requested exact boards, with source provenance and independent push counts.",
+  "status": "No current-record witness obtained from the inspected public sources. Ten alternative witnesses obtained and checked by two replay implementations.",
+  "targets": {
+    "50": 370,
+    "69": 433,
+    "66": 325,
+    "52": 421,
+    "37": 284,
+    "74": 212,
+    "13": 238,
+    "15": 122,
+    "22": 324,
+    "31": 250
+  },
+  "exact_record_witnesses_obtained": 0,
+  "alternative_witnesses_obtained": 10,
+  "live_record_upper_total": 2979,
+  "alternative_upper_total": 3377,
+  "alternative_excess_pushes": 398,
+  "baseline_recommendation": "Keep current-record numerical bounds provisional until exact witnesses are obtained. These larger alternatives establish solvability but do not meet the user-requested current-record baseline.",
+  "verification": {
+    "command": "python3 research/upper-witness-audit/verify_witnesses.py",
+    "result": "All ten alternatives accepted by sokogap.core.replay and by a separate coordinate-pair transition implementation, with equal moves and pushes.",
+    "manifest": "research/upper-witness-audit/best-available-witnesses.json",
+    "results": "research/upper-witness-audit/independent-replay-results.json",
+    "hash_policy": "Board SHA-256 uses Board.text() canonical ASCII. Solution SHA-256 includes the retained final LF."
+  },
+  "public_sources_inspected": [
+    {
+      "source": "Let's Logic",
+      "urls": [
+        "https://letslogic.com/",
+        "https://letslogic.com/level/890"
+      ],
+      "finding": "Live site push-record counts are public, and root browser inspection found no anonymous replay/download control on record rows or Play page. Homepage advertises live replays to members for levels they have solved. JSoko API client uses an account API key; no anonymous trace export located.",
+      "evidence": "research/live-records-2026-10-26.json; research/upper-witness-audit/JSoko-LetsLogicAPI.java; root browser observations",
+      "witnesses_obtained": 0
+    },
+    {
+      "source": "Sokoban Solver Statistics tools archive",
+      "urls": [
+        "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip"
+      ],
+      "finding": "Archive embeds best-record counts in its database, separately from replayable computer-solver traces. No inspected trace matches the ten target push records. The retained alternatives for seven boards are from this archive (six Takaken 7.4, one YASS 2.153).",
+      "evidence": "research/source/solver-tools.zip; research/source/xsokoban-cache.lisp; per-witness source_archive_members"
+    },
+    {
+      "source": "Sokoban YASC 1.690 official source archive",
+      "urls": [
+        "https://downloads.sourceforge.net/project/sokobanyasc/sokobanyasc/YASC_1_690_src.zip"
+      ],
+      "finding": "Bundled XSokoban solution files contain replayable solutions, but none matches a requested current record. Alternatives for 66, 52 and 74 improve the other inspected traces.",
+      "evidence": "YASC_1_690_src.zip; Solutions - XSokoban.txt; XSokoban Solutions.txt; archive metadata"
+    },
+    {
+      "source": "JSoko official packages and source",
+      "urls": [
+        "https://downloads.sourceforge.net/project/jsokoapplet/JSoko/Version%202.26/JSoko_2.26-src.zip",
+        "https://downloads.sourceforge.net/project/jsokoapplet/JSoko/Version%202.26/JSoko_2.26.zip",
+        "https://downloads.sourceforge.net/project/jsokoapplet/JSoko/Version%202.29/JSoko_2.29.zip"
+      ],
+      "finding": "Default database has no stored solutions. Initial CLI attempts failed at GUI integer-spinner assignment and then at an excessive memory parameter. A five-minute follow-up fixed the spinner type in a temporary class override and used the correct memory units. Replayed alternatives improved from 264 to 256 pushes for 31 and from 256 to 248 pushes for 13; neither matches its live record.",
+      "evidence": "JSoko_2.26-src.zip and metadata; JSoko-OptimizerAsPlugin.java; empty optimizer output files"
+    },
+    {
+      "source": "Original Cornell XSokoban archive and score table",
+      "urls": [
+        "https://www.cs.cornell.edu/andru/xsokoban.html",
+        "https://www.cs.cornell.edu/andru/xsokoban/scores.txt"
+      ],
+      "finding": "Original archive establishes board identity. Public global score table contains move/push counts, names and dates, without replay traces. No matching record trace found.",
+      "evidence": "research/source/xsokoban-3.3c.tar.gz; root board-identity audit"
+    },
+    {
+      "source": "Sourcecode.se Sokoban",
+      "urls": [
+        "https://www.sourcecode.se/sokoban/download/Scoring.htm",
+        "https://www.sourcecode.se/sokoban/faq.php",
+        "https://www.sourcecode.se/sokoban/levels.php"
+      ],
+      "finding": "Scoring docs describe automatic best-score downloads and local replayable solutions; this does not establish downloadable global record traces. FAQ says they have no solutions. Public Original & Extra collection ID 1085 endpoints expose boards and download buttons only. Official application download presents Accept & Download license agreement; no acceptance or installation performed.",
+      "evidence": "sourcecode-*.html and their retrieval metadata"
+    },
+    {
+      "source": "Sokoban.info",
+      "urls": [
+        "https://sokoban.info/",
+        "https://sokoban.info/high-scores.php",
+        "https://sokoban.info/js/game.js"
+      ],
+      "finding": "Public high-score View links and ScoreHistory strings exist. The inspected original-level link returned an unrelated/incomplete 75-move history, not a complete trace for candidate 13. No candidate witness accepted.",
+      "evidence": "sokobaninfo*.html, sokobaninfo-game.js and retrieval metadata"
+    },
+    {
+      "source": "Sokobanonline.com",
+      "urls": [
+        "https://www.sokobanonline.com/play/web-archive/thinking-rabbit/original/4364_original-1"
+      ],
+      "finding": "Public page exposes move-score leaderboard; no usable push-record replay export found."
+    },
+    {
+      "source": "Soko++ public solutions backup",
+      "urls": [
+        "https://www.joriswit.nl/sokoban/mobile/solutions.htm",
+        "https://www.joriswit.nl/sokoban/mobile/solutions-list.htm",
+        "https://www.joriswit.nl/sokoban/mobile/positions-backup.zip"
+      ],
+      "finding": "Downloaded backup and full solution listing. The 15 listed collections are Microban I-IV, Cosmos collections, Yoshio Murase collections, GrigrStar and GrigrSun. No Original or XSokoban collection appears.",
+      "evidence": "sokoplusplus-positions-backup.zip, sokoplusplus-solutions-list.htm and metadata"
+    },
+    {
+      "source": "Wayne Campbell Sokoban Original Puzzles Tribute (2014)",
+      "urls": [
+        "https://sokotribute.blogspot.com/",
+        "https://drive.google.com/open?id=0BwGoNiUiSPqjd1duZjI1SDNTNjA"
+      ],
+      "finding": "Author offers a YASO push-optimized solution file. Anonymous download redirected to Google sign-in. The parent agent then used the connected Google Drive files.get metadata API with the author-linked file ID; the current account received 404 NOT_FOUND. No authorized file access or trace was obtained.",
+      "evidence": "sokotribute.html; sokotribute-push-optimized.sign-in.html and metadata",
+      "follow_up": "A user-supplied copy or a newly accessible public author link could be inspected and replayed. Do not infer that a 2014 optimizer trace matches the current record."
+    }
+  ],
+  "remaining_routes": [
+    "An authorized Let's Logic member export or replay for solved levels, subject to ordinary account access and reuse permission.",
+    "A public or user-supplied copy of the exact record LURD traces, bound to the canonical board hashes.",
+    "Independent solver/optimizer reproduction of each target count, with the resulting full traces replayed.",
+    "User supplies a copy of the author-linked Sokotribute push-optimized file, or a public accessible replacement link; replay and compare its traces."
+  ],
+  "preservation_and_reuse": "Original source URLs, retrieval timestamps, archive hashes, matching archive member hashes and solution hashes are retained. Download availability alone is not recorded as redistribution permission. No manifest or core implementation changed by this audit.",
+  "external_actions": "Read-only public downloads and local verification only. No registration, login bypass, record submission, external messages, repository push or deployment.",
+  "local_optimizer_follow_up": {
+    "started_at": "2026-10-27T01:49:25+00:00",
+    "completed_runs_by": "2026-10-27T01:54:24+00:00",
+    "scope": "Five-minute bounded local follow-up; successfully optimized candidates 31 and 13. Other candidates not attempted within this follow-up.",
+    "fix": "Preserve Integer type in NumberInputTF.setValue for integer spinner models. Applied only to temporary third-party class override.",
+    "memory_parameter": "The CLI maximum-box-configurations setting is multiplied by 1000 by OptimizerGUI. Corrected from 100000 (100 million effective) to 100 (100 thousand effective) after an out-of-memory dialog.",
+    "results": "optimized-witnesses.json",
+    "exact_record_witnesses_obtained": 0,
+    "push_improvement_over_downloaded_alternatives": 16,
+    "previous_downloaded_provenance": "downloaded-witnesses.json"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "instances": [
+    {
+      "id": "xsokoban-50",
+      "published_lower": 102,
+      "certified_lower": 104,
+      "format": "sokogap-abstraction-v1",
+      "proof_states": 0,
+      "verification_seconds": 3.4617199450731277,
+      "push_transitions": 901566
+    },
+    {
+      "id": "xsokoban-69",
+      "published_lower": 223,
+      "certified_lower": 223,
+      "format": "sokogap-abstraction-v1",
+      "proof_states": 0,
+      "verification_seconds": 2.29512946982868,
+      "push_transitions": 539112
+    },
+    {
+      "id": "xsokoban-66",
+      "published_lower": 193,
+      "certified_lower": 193,
+      "format": "sokogap-abstraction-v1",
+      "proof_states": 0,
+      "verification_seconds": 2.8244598319288343,
+      "push_transitions": 761310
+    },
+    {
+      "id": "xsokoban-52",
+      "published_lower": 379,
+      "certified_lower": 379,
+      "format": "sokogap-abstraction-v2",
+      "proof_states": 16,
+      "verification_seconds": 4.618371809832752,
+      "push_transitions": 1026717
+    },
+    {
+      "id": "xsokoban-37",
+      "published_lower": 246,
+      "certified_lower": 246,
+      "format": "sokogap-abstraction-v1",
+      "proof_states": 0,
+      "verification_seconds": 2.714519878849387,
+      "push_transitions": 802094
+    },
+    {
+      "id": "xsokoban-74",
+      "published_lower": 190,
+      "certified_lower": 194,
+      "format": "sokogap-abstraction-v1",
+      "proof_states": 0,
+      "verification_seconds": 1.5549202510155737,
+      "push_transitions": 352630
+    },
+    {
+      "id": "xsokoban-13",
+      "published_lower": 224,
+      "certified_lower": 224,
+      "format": "sokogap-abstraction-v2",
+      "proof_states": 3,
+      "verification_seconds": 1.6954075710382313,
+      "push_transitions": 489433
+    },
+    {
+      "id": "xsokoban-15",
+      "published_lower": 108,
+      "certified_lower": 108,
+      "format": "sokogap-abstraction-v2",
+      "proof_states": 4,
+      "verification_seconds": 1.346311894012615,
+      "push_transitions": 437415
+    },
+    {
+      "id": "xsokoban-22",
+      "published_lower": 310,
+      "certified_lower": 310,
+      "format": "sokogap-abstraction-v1",
+      "proof_states": 0,
+      "verification_seconds": 6.7102797869592905,
+      "push_transitions": 1750420
+    },
+    {
+      "id": "xsokoban-31",
+      "published_lower": 236,
+      "certified_lower": 236,
+      "format": "sokogap-abstraction-v1",
+      "proof_states": 0,
+      "verification_seconds": 1.9029931561090052,
+      "push_transitions": 633148
+    }
+  ],
+  "total_lower": 2217,
+  "total_seconds": 29.127472867956385,
+  "peak_rss_kib": 181344,
+  "work_counts": {
+    "push_transitions": 7693845
+  }
+}

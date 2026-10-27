@@ -1,0 +1,607 @@
+{
+  "format": "sokogap-public-bound-audit-v1",
+  "status": "Completed bounded public-source audit; certificate generation and upper-witness replay remain separate release gates.",
+  "audit_local_date": "2026-10-26",
+  "audit_timezone": "America/Los_Angeles",
+  "completed_at_utc": "2026-10-27T01:31:16.011801+00:00",
+  "conclusion": {
+    "selected_count": 10,
+    "strongest_public_numerical_lower_source_found": "IJCAI 2016 initial-state heuristics",
+    "selected_lower_total": 2211,
+    "selected_upper_total": 2979,
+    "selected_documented_gap": 768,
+    "newer_stronger_numeric_lower_records_found": 0,
+    "candidate_optimality_claims_found": 0,
+    "scope_language": "Strongest numerical lower bounds found in the inspected public sources as of 2026-10-26.",
+    "scope_limitation": "There is no located comprehensive current lower-bound registry. Unpublished runs, inaccessible logs, and other unindexed work may give stronger bounds. Do not call these proven global lower-bound records."
+  },
+  "instances": [
+    {
+      "id": "xsokoban-13",
+      "number": 13,
+      "selected": true,
+      "board_sha256": "ae1aebb28663a8814065a8ff90205aa5973f2771e876615f841e0c5f45c0436e",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 224,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 238,
+      "record_url": "https://www.letslogic.com/level/890",
+      "documented_gap": 14,
+      "current_statistics_static_lower_bound": 220,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        220,
+        220,
+        220
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-14",
+      "number": 14,
+      "selected": false,
+      "board_sha256": "9cc20fd5ab9c1a960fb9a86b9dbd44f7b8025115f0fd42ea03233b7da184ba94",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 231,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 239,
+      "record_url": "https://www.letslogic.com/level/891",
+      "documented_gap": 8,
+      "current_statistics_static_lower_bound": 231,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        231,
+        231,
+        231
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-15",
+      "number": 15,
+      "selected": true,
+      "board_sha256": "08c65043e7f604af2ba65a74e3dae9f6716987e8ee1a5499659cd3e746d34807",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 108,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 122,
+      "record_url": "https://www.letslogic.com/level/892",
+      "documented_gap": 14,
+      "current_statistics_static_lower_bound": 94,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        94,
+        96,
+        94
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-20",
+      "number": 20,
+      "selected": false,
+      "board_sha256": "f19aa2b255720bdefc4b381e688ae07c768da236664c26339044aa290cf9d2c1",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 450,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 462,
+      "record_url": "https://www.letslogic.com/level/58132",
+      "documented_gap": 12,
+      "current_statistics_static_lower_bound": 444,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        302,
+        446,
+        358
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-22",
+      "number": 22,
+      "selected": true,
+      "board_sha256": "e1f47afae795332e782de4029011676ddfbc8d79e2f5cf37f023be7f0c078a77",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 310,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 324,
+      "record_url": "https://www.letslogic.com/level/899",
+      "documented_gap": 14,
+      "current_statistics_static_lower_bound": 306,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        306,
+        308,
+        306
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-31",
+      "number": 31,
+      "selected": true,
+      "board_sha256": "88a26d4a3f5dbe352eaeb842e8da89fa993260aec96be7dab86827576acc2a23",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 236,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 250,
+      "record_url": "https://www.letslogic.com/level/908",
+      "documented_gap": 14,
+      "current_statistics_static_lower_bound": 228,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        228,
+        232,
+        232
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-32",
+      "number": 32,
+      "selected": false,
+      "board_sha256": "030f90fba48b1240d3039123e6f429c4d2a8100e422dc95f632e2631ff42fdbb",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 129,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 139,
+      "record_url": "https://www.letslogic.com/level/44555",
+      "documented_gap": 10,
+      "current_statistics_static_lower_bound": 111,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        111,
+        113,
+        111
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-37",
+      "number": 37,
+      "selected": true,
+      "board_sha256": "6aa346a7ac69d38c1eb721251d04e0e900c0a43ea6f746fe819a5a38712c1409",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 246,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 284,
+      "record_url": "https://www.letslogic.com/level/58175",
+      "documented_gap": 38,
+      "current_statistics_static_lower_bound": 234,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        220,
+        242,
+        220
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-41",
+      "number": 41,
+      "selected": false,
+      "board_sha256": "a8e2ceb7aaa6c1b7beca531e67e3cf274a5a4f14c0c43aa734cf1026d53d2684",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 227,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 237,
+      "record_url": "https://www.letslogic.com/level/918",
+      "documented_gap": 10,
+      "current_statistics_static_lower_bound": 217,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        201,
+        221,
+        207
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-42",
+      "number": 42,
+      "selected": false,
+      "board_sha256": "c45a50b9d001cf99ceb568547289641b7812e3ad99c0da676a8c501c12d8907e",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 208,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 218,
+      "record_url": "https://www.letslogic.com/level/919",
+      "documented_gap": 10,
+      "current_statistics_static_lower_bound": 208,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        208,
+        208,
+        208
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-50",
+      "number": 50,
+      "selected": true,
+      "board_sha256": "d6f86a2a022aa54b1d83f17e22cfa568ad62545f924361f49ae2f27dec617e55",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 102,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 370,
+      "record_url": "https://www.letslogic.com/level/58203",
+      "documented_gap": 268,
+      "current_statistics_static_lower_bound": 100,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        96,
+        100,
+        98
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-52",
+      "number": 52,
+      "selected": true,
+      "board_sha256": "4d1caeaba26f1f63bc10e203b4b1405c8ee808ce67483a620a63ce02574aa90b",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 379,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 421,
+      "record_url": "https://www.letslogic.com/level/929",
+      "documented_gap": 42,
+      "current_statistics_static_lower_bound": 365,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        365,
+        367,
+        369
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-56",
+      "number": 56,
+      "selected": false,
+      "board_sha256": "3bbf687da2a0062d0fae61e8094cd0fb142777808e391eeda94fec3b3ab2e898",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 201,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 203,
+      "record_url": "https://www.letslogic.com/level/933",
+      "documented_gap": 2,
+      "current_statistics_static_lower_bound": 193,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        191,
+        193,
+        191
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-66",
+      "number": 66,
+      "selected": true,
+      "board_sha256": "9fea75636321b79e19dbdd3a7733984a528a21fe6b618a191df8c385c276169b",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 193,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 325,
+      "record_url": "https://www.letslogic.com/level/943",
+      "documented_gap": 132,
+      "current_statistics_static_lower_bound": 185,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        185,
+        187,
+        185
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-69",
+      "number": 69,
+      "selected": true,
+      "board_sha256": "59be4374352e4b81d02fc1f376e43d2a7d7711868b4384a2db8e9509403bf48a",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 223,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 433,
+      "record_url": "https://www.letslogic.com/level/946",
+      "documented_gap": 210,
+      "current_statistics_static_lower_bound": 213,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        207,
+        219,
+        209
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-71",
+      "number": 71,
+      "selected": false,
+      "board_sha256": "7bb8f3ac773e42828e2c1ac9afed82394903f22c5963165918580b24a9ddc42a",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 302,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 308,
+      "record_url": "https://www.letslogic.com/level/948",
+      "documented_gap": 6,
+      "current_statistics_static_lower_bound": 290,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        290,
+        294,
+        290
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    },
+    {
+      "id": "xsokoban-74",
+      "number": 74,
+      "selected": true,
+      "board_sha256": "0bdc91008dd99cfcd266202b8cd4ca87da7969c77459641f3abf34634f241ec6",
+      "board_identity_basis": "Existing import audit matched current statistics layout to original Cornell XSokoban 3.3c archive, after canonicalization.",
+      "strongest_public_numerical_lower_found": 190,
+      "lower_source": "Pereira et al., IJCAI 2016, Table 1, maximum of initial-state columns 1I, 2I, 2D",
+      "lower_source_url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "lower_source_year": 2016,
+      "lower_is_final_search_frontier": false,
+      "published_record_upper": 212,
+      "record_url": "https://www.letslogic.com/level/951",
+      "documented_gap": 22,
+      "current_statistics_static_lower_bound": 164,
+      "socs2013_lower_columns_mm_rs_pdb": [
+        158,
+        172,
+        170
+      ],
+      "ijcai2016_proven_optimal_ub_highlighted": false,
+      "sokolution_7_32_30_min_published_status": "not solved in push-optimal test",
+      "jsoko_2_22_10_min_published_status": "not solved in push-optimal test",
+      "later_optimality_claim_found": false,
+      "known_optimum_status": "No optimum established for this board by sources inspected in this audit; this is not an exhaustive proof of absence.",
+      "independent_certificate_status": "Separate release gate; source reports do not satisfy executable lower-certificate requirements."
+    }
+  ],
+  "important_distinctions": [
+    "The solver statistics Lower Bound column is a static heuristic field. It remains below solution cost on many solved boards, so it cannot be interpreted as the final search frontier or the strongest proved bound.",
+    "A timeout in a push-optimal test indicates failure under that configuration and time limit. It does not itself prove optimality unresolved worldwide.",
+    "IJCAI 2016 Table 1 highlights UB cells where search established an optimum. None of the 17 candidate UB cells is highlighted (checked visually). The paper mentions higher frontier f-values on timeout but does not tabulate the individual final f-values for unresolved boards.",
+    "The SoCS article landing page currently gives a 2021 upload/publication date, but the paper is from SoCS 2013. It is not a newer numerical-bound source.",
+    "Recent learned-solver results on Boxoban or arbitrary small boards do not establish bounds for these exact XSokoban layouts.",
+    "Closed-source solver reports are research leads; benchmark lower bounds still require independently checked proof evidence.",
+    "The current Sokolution homepage observed by the parent agent lists v7.32; the JSoko developer news page reports v7.33 on 2025-03-20, a crash fix for boards exceeding 1024 floors. Version-number discrepancy is preserved rather than resolved by assumption."
+  ],
+  "sources_inspected": [
+    {
+      "id": "ijcai2016",
+      "url": "https://ijcai.org/proceedings/2016/0100.pdf",
+      "local_path": "../source/ijcai2016.pdf",
+      "findings": "Table 1 gives initial bounds used here. All 17 candidate optimum cells unhighlighted. Final frontier values mentioned but unlisted."
+    },
+    {
+      "id": "socs2013",
+      "url": "https://ojs.aaai.org/index.php/SOCS/article/download/18290/18081/21806",
+      "findings": "Table 2, PDF page 5: MM/RS/PDB bounds for all 17 checked. None exceeds the 2016 maximum. Full primary PDF read through web tool; local direct download failed."
+    },
+    {
+      "id": "sokolution-optimal",
+      "url": "https://sokoban-solver-statistics.sourceforge.io/statistics/Push-OptimalTestSuite/Sokolution%20-%20XSokoban.html",
+      "local_path": "../source/xsokoban-optimal.html",
+      "publication_date": "2025-04-11",
+      "findings": "73 of 90 solved in published push-optimal test; all 17 candidate boards not solved. Sokolution 7.32, 30 minutes, AMD Ryzen 9 7900X."
+    },
+    {
+      "id": "jsoko-optimal",
+      "url": "https://sokoban-solver-statistics.sourceforge.io/statistics/Push-OptimalTestSuite/JSoko%20-%20XSokoban.html",
+      "local_path": "jsoko-optimal.html",
+      "publication_date": "2025-02-08",
+      "findings": "JSoko 2.22, 10 minutes, 25 of 90 push-optimal solves. None of the 17 candidate boards solved."
+    },
+    {
+      "id": "live-comparison",
+      "url": "http://sokobano.de/wiki/index.php?title=Solver_Statistics",
+      "local_path": "sokobano-comparison.html",
+      "revision": 8323,
+      "findings": "Current comparison reports push-optimal solved totals: Rolling Stone 6, Pereira 28, JSoko 25, Sokolution 73. Sokolution source unavailable. Links to same optimal-statistics tables; no final-frontier records."
+    },
+    {
+      "id": "pereira-table",
+      "url": "http://sokobano.de/wiki/index.php?title=SolverStatistics-Pereira-ThinkingRabbit-XSokoban-Push-Optimal",
+      "local_path": "pareira-optimal.html",
+      "revision": 5469,
+      "findings": "Lists the 28 solved boards from IJCAI 2016; no candidate present."
+    },
+    {
+      "id": "sokolution-notes",
+      "url": "http://sokobano.de/wiki/index.php?title=Sokoban_solver_%22scribbles%22_by_Florent_Diedler_about_the_Sokolution_solver",
+      "local_path": "sokobano-sokolution.html",
+      "revision": 6140,
+      "findings": "Author technical description of matching/penalty pattern databases, optimal and nonoptimal modes. Historic description is older than 7.x; no current per-board lower record."
+    },
+    {
+      "id": "jsoko-news",
+      "url": "https://jsokoapplet.sourceforge.io/blog.php",
+      "findings": "Developer-maintained news read using web tool: Sokolution 7.33 released 2025-03-20 for a >1024-floor crash fix; newer JSoko versions through 2.29 in 2026. No new per-board XSokoban lower values. Direct fetch returned 404."
+    },
+    {
+      "id": "author-homepage",
+      "url": "https://www.inf.ufrgs.br/~agpereira/",
+      "local_path": "2016-author.html",
+      "findings": "Current selected publications through 2026 include IJCAI 2016 as latest dedicated XSokoban optimality paper; 2019 work concerns generation, later work broader planning. Public GitHub repositories also inspected; no released solver/results for the 2016 paper located."
+    },
+    {
+      "id": "author-repositories",
+      "url": "https://api.github.com/users/andregrahl/repos?per_page=100",
+      "local_path": "andregrahl-repos.json",
+      "findings": "Public repos andregrahl profile, CSrankings, leanplan. No per-board XSokoban result logs."
+    },
+    {
+      "id": "learning-deadlocks-2018",
+      "url": "https://lume.ufrgs.br/bitstream/handle/10183/190174/001088740.pdf",
+      "local_path": "2018-thesis.pdf",
+      "findings": "Jean Persi Boelter, Learning Deadlocks in Sokoban, December 2018. Experimental tables do not establish any of the candidate optima and do not give final-f numerical bounds for them."
+    },
+    {
+      "id": "ritt-publications",
+      "url": "https://ritt-home.net/doku.php?id=publications",
+      "findings": "Author bibliography through 2025; no newer exact-XSokoban numerical-bound paper located."
+    },
+    {
+      "id": "ritt-supplements",
+      "url": "https://ritt-home.net/doku.php?id=online_supplements",
+      "findings": "No Sokoban 2016 source code/results supplement linked."
+    },
+    {
+      "id": "solver-tools",
+      "url": "https://downloads.sourceforge.net/project/sokoban-solver-statistics/Sokoban_Solver_Statistics_Tools.zip",
+      "local_path": "../source/solver-tools.zip",
+      "findings": "Archive listing inspected. Contains nonoptimal 6.34 Sokolution result files and other solver traces; no 7.32 optimal timeout-frontier logs."
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://lume.ufrgs.br/handle/10183/149574",
+      "reason": "Full 2016 dissertation landing page timed out; show=full returned a security-check page. No dissertation appendix was read."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0004370215000867",
+      "reason": "2015journal full text unavailable; abstract inspected. 2016 paper supplies the 1I baseline from that work."
+    },
+    {
+      "url": "https://sokolution.infinityfreeapp.com/sokolutionv7.32-standalone.zip",
+      "reason": "Direct fetch returned JavaScript challenge HTML, not a ZIP. Parent agent has browser access and may obtain archive separately."
+    }
+  ],
+  "search_scope": {
+    "search_terms": [
+      "XSokoban optimal lower bounds Sokolution 2026 2025",
+      "Sokoban optimal solver XSokoban lower bound 2024 2023",
+      "XSokoban Sokolution optimally solved 73 90",
+      "Sokolution 7.32 lower bound",
+      "XSokoban optimal solutions 73",
+      "Sokoban lower bounds Pereira 2017 2019 2025",
+      "Sokoban final frontier lower bound",
+      "Solving moving-blocks problems thesis Pereira"
+    ],
+    "followed_primary_sources": "Current solver result tables, live comparison and author technical notes, release notes, 2016 paper and 2013 predecessor, 2018 thesis, 2016 author current webpage and public repositories, coauthor publication/supplement pages.",
+    "not_done": [
+      "No people contacted or external messages sent.",
+      "No solver executable from an external source was run.",
+      "No claimed exhaustive proof that later bounds do not exist."
+    ]
+  }
+}

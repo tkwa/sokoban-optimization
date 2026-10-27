@@ -1,0 +1,19 @@
+{
+  "graph_checks": {
+    "floor_layouts": 6,
+    "goal_layouts": 69,
+    "raw_states": 21874,
+    "solvable_state_checks": 3236,
+    "canonical_transition_checks": 3269,
+    "matching_consistency_edges": 4650,
+    "exact_certificates": 58
+  },
+  "input_and_freeze": {
+    "deep_json_exception": "Invalid",
+    "loose_baseline_scoreable": false,
+    "loose_declared_gap": 40,
+    "bundled_evidence_actual_gap": 0,
+    "nonobject_manifest_row_exception": "Invalid"
+  },
+  "elapsed_seconds": 0.326
+}
